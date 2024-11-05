@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* #slotContainer::-webkit-scrollbar {
+height: 6px;
+}
+
+#slotContainer::-webkit-scrollbar-track {
+background: #e0e0e0;
+border-radius: 10px;
+}
+
+#slotContainer::-webkit-scrollbar-thumb {
+background-color: #4caf50;
+border-radius: 10px;
+border: 2px solid #e0e0e0;
+transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+#slotContainer::-webkit-scrollbar-thumb:hover {
+background-color: #388e3c;
+border-color: #c8e6c9;
+}
+
+#slotContainer {
+scrollbar-color: #4caf50 #e0e0e0;
+scrollbar-width: thin;
+} */
+
+/* Animasi hover untuk lapangan */
+.field-card:hover {
+transform: scale(1.01);
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Adjusts the width and font-size on smaller devices */
+@media (max-width: 768px) {
+.flatpickr-calendar {
+width: 100% !important;
+/* Ensure full width on mobile */
+font-size: 14px;
+/* Reduce font size for better fit */
+}
+
+/* Adjust header and button sizes for smaller screens */
+.flatpickr-month {
+font-size: 16px;
+/* Larger font for month name */
+}
+
+.flatpickr-day {
+padding: 0.5em;
+/* Increase padding to make days easier to tap */
+}
+
+/* Reduce calendar height for better usability */
+.flatpickr-days {
+max-height: 200px;
+overflow-y: scroll;
+/* Allow scrolling if the calendar is too tall */
+}
+}
